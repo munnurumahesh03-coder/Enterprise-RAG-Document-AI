@@ -17,7 +17,12 @@ st.markdown("Upload any PDF document and ask questions. The AI will extract the 
 
 # Fetch API key securely from Streamlit Secrets
 # (This ensures the user never has to type it!)
-GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+# Check if we are on Streamlit Cloud (secrets) or Docker/Render (Environment Variables)
+try:
+    GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
+except:
+    GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
+
 
 # --- Sidebar: Setup & Upload ---
 with st.sidebar:
