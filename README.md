@@ -1,11 +1,13 @@
 # 📄 Enterprise Document AI & RAG Engine
 
-[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg )](https://www.python.org/ )
-[![Streamlit](https://img.shields.io/badge/Streamlit-Live-FF4B4B.svg )](https://enterprise-rag-document-ai-aebfomlonaecv4gwvijn9g.streamlit.app/ )
-[![LangChain](https://img.shields.io/badge/LangChain-Framework-green.svg )](https://langchain.com/ )
-[![ChromaDB](https://img.shields.io/badge/ChromaDB-Vector_Store-orange.svg )](https://www.trychroma.com/ )
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg  )](https://www.python.org/  )
+[![Streamlit](https://img.shields.io/badge/Streamlit-Live-FF4B4B.svg  )](https://enterprise-rag-document-ai-aebfomlonaecv4gwvijn9g.streamlit.app/  )
+[![LangChain](https://img.shields.io/badge/LangChain-Framework-green.svg  )](https://langchain.com/  )
+[![ChromaDB](https://img.shields.io/badge/ChromaDB-Vector_Store-orange.svg  )](https://www.trychroma.com/  )
+[![CI/CD](https://img.shields.io/github/actions/workflow/status/munnurumahesh03-coder/Enterprise-RAG-Document-AI/ci.yml?label=CI%2FCD%20Pipeline )](https://github.com/munnurumahesh03-coder/Enterprise-RAG-Document-AI/actions )
+[![Docker](https://img.shields.io/badge/Docker-Containerized-blue?logo=docker )](https://github.com/munnurumahesh03-coder/Enterprise-RAG-Document-AI/pkgs/container/enterprise-rag-engine )
 
-### 🚀 Live Application: [Try the Enterprise RAG Engine Here](https://enterprise-rag-document-ai-aebfomlonaecv4gwvijn9g.streamlit.app/ )
+### 🚀 Live Application: [Try the Enterprise RAG Engine Here](https://enterprise-rag-document-ai-aebfomlonaecv4gwvijn9g.streamlit.app/  )
 
 ## 📌 Overview
 This project is a Universal Retrieval-Augmented Generation (RAG) SaaS platform designed to bridge the gap between Large Language Models and private, unstructured enterprise data. It allows users to upload any PDF document (research papers, HR manuals, financial reports) and instantly query it using natural language. The system is strictly engineered to eliminate LLM hallucinations by grounding all answers exclusively in the retrieved vector context.
@@ -34,13 +36,23 @@ This project is a Universal Retrieval-Augmented Generation (RAG) SaaS platform d
 * `app.py`: The main Streamlit application containing the UI, file uploader, and LangChain LCEL (LangChain Expression Language) pipeline.
 * `Enterprise_RAG_Architecture.ipynb`: The backend prototyping notebook demonstrating the step-by-step vector math and document chunking logic.
 * `requirements.txt`: Dynamically generated dependencies optimized for Streamlit Community Cloud deployment.
+* `Dockerfile` & `.github/workflows/`: MLOps configuration files for automated CI/CD testing and containerization.
 
-## 💻 Local Installation & Setup
-If you wish to run this RAG pipeline locally on your own machine:
+## 🐳 Run Locally via Docker (Recommended)
+This application is fully containerized with an automated CI/CD pipeline. You can pull the production-ready image directly from the GitHub Container Registry (GHCR) and run it with zero setup.
+
+```bash
+# Pull and run the Docker image
+docker run -p 8501:8501 ghcr.io/munnurumahesh03-coder/enterprise-rag-engine:latest
+```
+*Note: The app will be available at `http://localhost:8501`*
+
+## 💻 Manual Local Installation
+If you prefer to run the pipeline manually without Docker:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/Enterprise-RAG-Document-AI.git
+git clone https://github.com/munnurumahesh03-coder/Enterprise-RAG-Document-AI.git
 cd Enterprise-RAG-Document-AI
 
 # 2. Install dependencies
@@ -52,4 +64,4 @@ echo 'GROQ_API_KEY = "your_api_key_here"' > .streamlit/secrets.toml
 
 # 4. Launch the application
 streamlit run app.py
-
+```
