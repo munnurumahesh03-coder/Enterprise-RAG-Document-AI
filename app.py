@@ -116,8 +116,6 @@ if prompt := st.chat_input("Ask a question about your document..."):
                     config={"callbacks": [langfuse_handler]}
                 )
 
-                # 4. FORCE SEND TO LANGFUSE DASHBOARD (Crucial for Streamlit)
-                langfuse_handler.flush()
 
                 # Display and save response
                 st.markdown(response)
