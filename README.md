@@ -7,7 +7,7 @@
 [![CI/CD](https://img.shields.io/github/actions/workflow/status/munnurumahesh03-coder/Enterprise-RAG-Document-AI/ci.yml?label=CI%2FCD%20Pipeline )](https://github.com/munnurumahesh03-coder/Enterprise-RAG-Document-AI/actions )
 [![Docker](https://img.shields.io/badge/Docker-Containerized-blue?logo=docker )](https://github.com/munnurumahesh03-coder/Enterprise-RAG-Document-AI/pkgs/container/enterprise-rag-engine )
 
-### 🚀 Live Application: [Try the Enterprise RAG Engine Here](https://enterprise-rag-document-ai-aebfomlonaecv4gwvijn9g.streamlit.app/  )
+### 🚀 Live Application: [Try the Enterprise RAG Engine Here](https://enterprise-rag-document-ai-5mzrpyzd7twvhfmmcmcxwv.streamlit.app/  )
 
 ## 📌 Overview
 This project is a Universal Retrieval-Augmented Generation (RAG) SaaS platform designed to bridge the gap between Large Language Models and private, unstructured enterprise data. It allows users to upload any PDF document (research papers, HR manuals, financial reports) and instantly query it using natural language. The system is strictly engineered to eliminate LLM hallucinations by grounding all answers exclusively in the retrieved vector context.
