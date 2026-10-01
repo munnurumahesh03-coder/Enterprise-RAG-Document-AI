@@ -1,0 +1,4 @@
+Question,Status,Context_Relevance,Faithfulness,Correctness,Reason
+What is self-attention?,Pass,1,1,1,All criteria met.
+What is the speed of RNNs?,Retrieval Miss | Incorrect Answer,0,1,0,"The retrieved context about self‑attention does not address RNN speed, so it is irrelevant. The bot correctly admits lack of answer (faithful), but this response does not match the ground truth that RNNs are slower, leading to incorrectness."
+Who invented self-attention?,Retrieval Miss | Hallucination | Incorrect Answer,0,0,0,"The retrieved context lacks any information about the inventor, so it is not relevant; the bot answer is not derived from the context and incorrectly claims Elon Musk invented self‑attention, contradicting the ground truth that Google researchers did."
