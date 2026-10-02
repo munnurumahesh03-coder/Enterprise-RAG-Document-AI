@@ -1,0 +1,3 @@
+user_input,retrieved_contexts,response,reference,faithfulness,context_recall,answer_correctness
+What is self-attention?,"['Self-attention connects all words directly, improving speed.']",Self-attention connects all words directly.,It connects all words directly.,1.0,1.0,0.8992232594690794
+What is the speed of RNNs?,['Self-attention connects all words directly.'],RNNs are very fast.,RNNs process sequentially and are slower.,0.0,0.0,0.20212752748017243
